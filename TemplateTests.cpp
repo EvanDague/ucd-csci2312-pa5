@@ -187,7 +187,7 @@ void test_iterator_usage(ErrorContext &ec, unsigned int numRuns) {
             for (fixed_array<double>::iterator it = centenarray.begin(); it != centenarray.end(); ++it) {
                 pass = pass && *it == 10.0 * (u++) + 13.14;
             }
-
+            
             ec.result(pass);
         }
 
